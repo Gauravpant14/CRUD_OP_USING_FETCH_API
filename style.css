@@ -69,3 +69,13 @@ body{
       position: absolute;
 
   }
+
+  .btnGroup {
+      display: flex;
+  }
+
+  .btnGroup  li{
+    list-style-type: none;
+    margin: 5px;
+
+  }
