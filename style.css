@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+body{
+    animation-name: example;
+    animation-duration: 30s;
+    /* background:url(/img/1.jpg) !important;
+    background-repeat: no-repeat;
+    background-size: 100% 100%; */
+    font-family: 'Reggae One', cursive;
+}
+
+.bg h1{
+    font-family: 'Reggae One', cursive;
+}
+.container{
+    max-width: 900px;
+    margin: auto;
+    padding: 10px 0;
+}
+.row1{
+    margin: 10px -16px;
+}
+.search-bar{
+    display: flex;
+    justify-content: center;
+}
+.search-bar #input{
+    width: 50%;
+    background-color: 00FFFFFF;
+    border-radius: 5px;
+    border: 1px solid rgb(39, 38, 38);
+    padding: 7px 0px ;
+    font-size: 16px;
+    display: inline-block;
+    
+}
+
+.table{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.table td, .table th {
+    border: 1px solid rgb(247, 208, 208);
+    padding: 8px;
+  }
+
+  .table tr{background-color: #f2f2f2;}
+  .table tr:hover {background-color: #ddd;}
+
+ .table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #3e6fca;
+    color: rgb(19, 0, 0);
+  }
+
+
+
+
+  .styleBtn{
+      position: relative;
+  }
+
+  .styleBtn button{
+      position: absolute;
+
+  }
