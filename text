@@ -1,0 +1,7 @@
+ let x=value.result
+    se=x.filter((element)=>element.id===1)
+    console.log(se)
+
+
+
+    
