@@ -4,4 +4,85 @@
 
 
 
+               form +="<input type='text' name='name' id='name' class='input_post_form' placeholder='' ><br><br>";
+
+
+function create_data()
+{
+    // let value=id.data[0];
+    // let i=id.data[0].id;
+    // console.log(value);
+    let form="";
     
+            form +=" <form id='form_table'>";
+            form +="<label for=''>Name &nbsp;&nbsp;&nbsp;&nbsp;</label>";
+            form +="<input type='text' name='name' id='name' class='input_post_form' placeholder='' ><br><br>";
+
+            form +="<label for=''>Email Id </label>";
+            form +="<input type='text' name='email' id='' class='input_post_form' placeholder=''><br><br>";
+
+            form +="<label for=''>Address&nbsp;</label>";
+            form +="<input type='text' name='address' id='' class='input_post_form'><br><br>";
+
+            form +="<label for=''>Phone &nbsp;&nbsp;&nbsp;</label>";
+            form +="<input type='text' name='phone' id='' class='input_post_form'><br><br>";
+
+            form +="<label for=''>Gender&nbsp;&nbsp;</label>";
+            form +="<input type='text' name='gender' id=''  class='input_post_form'><br><br>";
+
+            form +="<label for=''>Country&nbsp;</label>";
+            form +="<input type='text' name='country' id=''  class='input_post_form'><br><br>";
+
+            form +="<label for=''>state   &nbsp;&nbsp;&nbsp;&nbsp;</label>";
+            form +="<input type='text' name='state' id='' class='input_post_form'><br><br>";
+            form +="<input type='submit' name='name' id='' value='submit' >"
+            form +="</form>";
+            
+            document.getElementById("body").innerHTML=form;
+
+            
+            form_table.onsubmit = async (e) => {
+                e.preventDefault();
+
+                let response = await fetch(' http://192.168.1.10:80/api/auth/register', {
+                method: 'POST',
+                body: new FormData(form_table)
+                });
+
+                let result = await response.json();
+
+                alert(result.message);
+            };
+}
+
+
+
+return `
+    
+                
+     
+        
+    
+                
+                    `;
+
+<form id ="form2" >
+                <input type="text" placeholder="Name" id="name2" value= ${filterData[0].name}>
+                <input type="text" placeholder="Email" id="email2" value=${filterData[0].email}>
+                <input type="text" placeholder="Password" id="pass2" value= ${filterData[0].password} >
+                <input type="text" placeholder="Address" id="Address2" value= ${filterData[0].address}>
+                <input type="text" placeholder="Phone" id="Phone2" value= ${filterData[0].phone}>
+                <input type="text" placeholder="Gender" id="gen2" value= ${filterData[0].gender}>
+                <input type="text" placeholder="Country" id="country2" value= ${filterData[0].country}>
+                <input type="text" placeholder="State" id="state2" value= ${filterData[0].state}>
+                
+               <button type="submit" id="editForm">Add</button>
+              </form>
+
+
+              password: pass2.value,
+        address: address2.value,
+        phone: phone2.value,
+        gender: gen2.value,
+        country: country2.value,
+        state: state2.value,

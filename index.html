@@ -16,16 +16,37 @@
   <div class="container">
 
    
+    <header>
+      <nav>
+        <ul>
+          <li class="EDIT">
+            <button type="button" class="btn btn-success allBtns" onclick="addNewData()">Add New Data</button>
+            </li>
+        </ul>
+      </nav>
+    </header>
 
-
-
+    <!-- Form Start -->
+    <form class="addPost">
+      <input type="text" placeholder="Name" id="fname">
+      <input type="text" placeholder="Email" id="email">
+      <input type="text" placeholder="Password" id="pass">
+      <input type="text" placeholder="Address" id="Address">
+      <input type="text" placeholder="Phone" id="Phone">
+      <input type="text" placeholder="Gender" id="gen">
+      <input type="text" placeholder="Country" id="country">
+      <input type="text" placeholder="State" id="state">
+     <button type="submit">Add</button>
+    </form>
+     <!-- Form End -->
+ 
     <div class="tableDesign" id="tableDesign">
       <table class="table">
         <thead>
           <tr class="header">
             <th>S NO</th>
          
-            <th>NAME</th>
+            <th class=".editname">NAME</th>
             <th>OPERATIONS</th> 
         
           </tr>
@@ -39,53 +60,22 @@
     
     </div>
     
-    <!-- Form Start -->
-    <div class="container contact" id="postMethod">
-      <div class="row">
-        <div class="col-md-3">
-          <div class="contact-info">
-            <img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image"/>
-            <h2>Add New Info</h2>
-            <h4>USE OF POST API </h4>
-          </div>
-        </div>
-        <div class="col-md-9">
-          <div class="contact-form">
-            <div class="form-group">
-              <label class="control-label col-sm-2" for="fname">First Name:</label>
-              <div class="col-sm-10">          
-              <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-sm-2" for="lname">Last Name:</label>
-              <div class="col-sm-10">          
-              <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname">
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-sm-2" for="email">Email:</label>
-              <div class="col-sm-10">
-              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-sm-2" for="comment">Comment:</label>
-              <div class="col-sm-10">
-              <textarea class="form-control" rows="5" id="comment"></textarea>
-              </div>
-            </div>
-            <div class="form-group">        
-              <div class="col-sm-offset-2 col-sm-10">
-              <button type="submit" class="btn btn-default">Submit</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="editFormDiv">
+      <input type="text" placeholder="Name" id="name2" >
+      <input type="text" placeholder="Email" id="email2" >
+      <input type="text" placeholder="Password" id="pass2"  >
+      <input type="text" placeholder="Address" id="Address2" >
+      <input type="text" placeholder="Phone" id="Phone2" >
+      <input type="text" placeholder="Gender" id="gen2">
+      <input type="text" placeholder="Country" id="country2" >
+      <input type="text" placeholder="State" id="state2" >
+      
+     <button type="submit" id="465">Add</button>
     </div>
+      
     
-    <!-- Form End -->
+
+
 
 
   </div>

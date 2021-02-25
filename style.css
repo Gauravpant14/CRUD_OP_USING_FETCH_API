@@ -123,3 +123,22 @@ body{
 }
 
   /* end of form styling */
+
+#postMethod{
+    display: none;
+}
+
+
+nav ul li {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.addPost{
+    display: none;
+}
+
+.editFormDiv{
+display: none;
+}
